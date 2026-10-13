@@ -75,12 +75,30 @@ section h3 {
 }
 
 .participants-section {
-  margin-top: 12px;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #dbe4f0;
+}
+
+.participants-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  color: #243b64;
+  font-size: 14px;
+}
+
+.participants-heading span {
+  color: #68758a;
+  font-size: 12px;
+  font-weight: normal;
 }
 
 .participants-list {
-  list-style: none;
-  margin-top: 8px;
+  margin: 8px 0 0;
+  padding-left: 20px;
+  color: #3e4d65;
 }
 
 .participants-list li {
@@ -88,12 +106,21 @@ section h3 {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  margin-bottom: 6px;
+  min-height: 32px;
+  padding: 4px 8px 4px 4px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  background-color: #f1f5fb;
+}
+
+.participants-list li::marker {
+  color: #4f6fae;
 }
 
 .empty-participants {
   color: #666;
   font-style: italic;
+  background-color: transparent !important;
 }
 
 .unregister-btn {
